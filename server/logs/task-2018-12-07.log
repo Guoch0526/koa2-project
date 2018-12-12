@@ -1,0 +1,1 @@
+[2018-12-07T11:49:04.886] [INFO] cheese - 响应时间为0.007s, 请求相关信息: {"method":"GET","url":"/","host":"localhost:3000","serverIp":"0.0.0.0","projectName":"koa2&learn","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}
