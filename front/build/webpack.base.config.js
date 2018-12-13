@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const srcResolve = function (file) {
@@ -12,7 +11,6 @@ const distResolve = function (file) {
 
 module.exports = {
   entry: {
-    'index': srcResolve('js/index'),
     'admin' : srcResolve('pages/admin.js'),
     'work' : srcResolve('pages/work.js'),
     'index' : srcResolve('pages/index.js'),
@@ -33,8 +31,6 @@ module.exports = {
       {
         test: /\.(css|less)$/,
         use: [
-          // devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          // 'style-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
           {

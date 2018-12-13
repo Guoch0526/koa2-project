@@ -7,7 +7,7 @@
     "init_sql": "node ./init/index.js",
     "dev": "npm run dev_server & npm run dev_static",
     "dev_server": "nodemon --harmony ./server/app",
-    "dev_static": "webpack --watch --config ./front/build/webpack.dev.config.js",
+    "dev_static": "rm -rf ./front/output/ && webpack --watch --config ./front/build/webpack.dev.config.js",
     "start_static": "rm -rf ./front/output/ && webpack --config ./front/build/webpack.prod.config.js",
     "start_server": "./node_modules/node/bin/node ./server/app.js",
     "start": "npm run start_static & npm run start_server"
